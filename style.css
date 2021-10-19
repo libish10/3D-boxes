@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#btn{
+   height: 50px;
+   width:200px;
+   position: relative;
+   left:45%;
+   margin-top: 30px;
+   background-color: rgb(7, 118, 245);
+   color:white;
+   border: none;
+   border-radius: 10px;
+   font-size: 18px;
+}
+#btn:hover{
+    color:red;
+    background-color: rgb(27, 250, 250);
+    cursor: pointer;
+}
+#container{
+    height:600px;
+    width:600px;
+    border: 1px solid red;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#container .item{
+    height:100px;
+    width:100px;
+    
+    background-color: lightblue;
+    position: relative;
+    
+}
+
+#container .item::after{
+    content:" ";
+    height: 99px;
+    width:20px;
+    background-color: darkblue;
+    position: absolute; 
+    left:99px;
+    top:10px;
+    transform: skewY(45deg);  
+}
+#container .item::before{
+    content:" ";
+    height: 20px;
+    width:99px;
+    background-color: darkblue;
+    position: absolute;
+   left:10px;
+   top:99px;
+    transform: skewX(45deg);  
+}
+/* #item1::before{
+    top: 229px;
+    left: 78px;
+
+}
+#item1::after{    
+    left: 167px;
+    top: 140px;
+}
+#item2::before{
+    top: 230px;
+    left: 218px;
+
+}
+#item2::after{    
+    left: 167px;
+    top: 141px;
+}
+#item3::before{
+    top: 229px;
+    left: 78px;
+
+}
+#item3::after{    
+    left: 167px;
+    top: 141px;
+}
+#item4::before{
+    top: 229px;
+    left: 78px;
+
+}
+#item4::after{    
+    left: 167px;
+    top: 141px;
+} */

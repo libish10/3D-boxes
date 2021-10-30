@@ -21,23 +21,29 @@
     background-color: rgb(27, 250, 250);
     cursor: pointer;
 }
+
 #container{
     height:600px;
     width:600px;
-    border: 1px solid red;
     margin: 25px auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
-    align-content: space-evenly;
+    align-content: space-evenly; 
+  
+   
+  
 }
 
 #container .item{
     height:100px;
     width:100px;
-    
     background-color: lightblue;
     position: relative;
+    background-image: url("./ben10.gif");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -61,39 +67,20 @@
    top:99px;
     transform: skewX(45deg);  
 }
-/* #item1::before{
-    top: 229px;
-    left: 78px;
 
-}
-#item1::after{    
-    left: 167px;
-    top: 140px;
-}
-#item2::before{
-    top: 230px;
-    left: 218px;
 
+.item-rotate {
+    animation: rotation 1s 0s ease-in-out infinite alternate both;
 }
-#item2::after{    
-    left: 167px;
-    top: 141px;
-}
-#item3::before{
-    top: 229px;
-    left: 78px;
 
+@keyframes rotation {
+    0%{
+        transform: rotate(50deg);
+    }
+    /* 50%{
+        transform: rotate(150deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
 }
-#item3::after{    
-    left: 167px;
-    top: 141px;
-}
-#item4::before{
-    top: 229px;
-    left: 78px;
-
-}
-#item4::after{    
-    left: 167px;
-    top: 141px;
-} */
